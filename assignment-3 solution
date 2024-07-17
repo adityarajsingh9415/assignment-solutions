@@ -1,0 +1,20 @@
+Check for High Load Average issue, below are some of the measures and steps to follow.
+
+1.  "top" or "htop" 
+    Identify the running processes with this command to look for the processes consuming high CPU, memory and I/O. Pay attention to "%CPU" and "%MEM" columns.
+
+2.  "uptime" 
+    Use this command to look for high numbers in the load average indicating the system is overloaded.
+
+3.  "isostat"
+    Use this command to monitor the I/O devices and check the load on the disc. 
+
+4.  "free -m"
+    Use this command to check fo the total, used and available memory including swap memory usage.
+
+5.  "df -h"
+    Use this command to check for the disk utilization then add or remove disk accordingly.
+
+By systematically using these commands, you can identify the primary cause of the high load on the server. Each command provides insights into different aspects of system
+performance, from CPU and memory usage to disk I/O. Once you identify the bottleneck, you can take appropriate actions such as optimizing processes, upgrading hardware, or 
+configuring system parameters to resolve the issue.
